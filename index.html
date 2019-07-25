@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>Add Cash flows</title>
+</head>
+<style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+<body>
+<h4>Date : 25-09-2018</h4>
+    <form id="addCashflow">
+        <label for="">Activity: </label>
+        <input type="text" name="activity" id="activity">
+
+        <label for="">Type: </label>
+        <input list="types" name="type" id="type">
+        <datalist id="types">
+           
+        </datalist>
+        <label for="">Amount: </label>
+        <input type="number" name="amount" id="">
+       <button type="submit" id="addCashflow_btn" >Add</button>
+
+    </form>
+    <br>
+
+    <br>
+    <div>
+        <table id="viewCashflows">
+         
+         
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+<!--  -->
